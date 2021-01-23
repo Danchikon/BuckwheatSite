@@ -1,0 +1,98 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 120%;
+  color: #191919;
+  word-break: break-word; }
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 2.2em;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+h3 {
+  font-size: 1.8em;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+h4 {
+  font-size: 1.6em;
+  font-weight: 400; }
+
+h5 {
+  font-size: 1.4em;
+  font-weight: 300; }
+
+h6 {
+  font-size: 1.2em;
+  font-weight: 300; }
+
+.big {
+  font-size: 4em;
+  font-weight: 700; }
+
+a {
+  outline: none;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 400;
+  touch-action: inherit;
+  color: #ffffff; }
+
+a img,
+a:active img,
+a:visited img,
+a img {
+  outline: none; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+p {
+  margin: 7px 0; }
+
+p,
+select,
+option,
+label {
+  line-height: 150%;
+  font-size: 1.2em;
+  font-weight: 300; }
+
+button {
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none; }
+
+input {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0 10px;
+  font-size: 1.2em;
+  transition: .2s all ease-out; }
+
+textarea {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1.2em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: .2s all ease-out; }
+
+/*# sourceMappingURL=typography.css.map */
