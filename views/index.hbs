@@ -143,7 +143,6 @@
     </div> 
     <!-- Search ends -->
 
-
     <!-- PRODUCT LIST STARTS -->
     <div class="container-full column">
         <div class="container margin-vertical-45">
@@ -151,149 +150,29 @@
         </div>
         <div class="container five-per-row">
 
-            <!-- PRODUCT ELEMENT -->
-            <div class="product-el grid-el">
-                <div class="image-wrap">
-                    <a href="#">
-                        <img src="./assets/img/jpg/product.jpg" alt="">
-                    </a>
-                </div>
-                <div class="info-wrap padding-10">
-                    <h4>Гречка для тебе та всієї сім'ї</h4>
-                    <div class="info-main row between vertical-center">
-                        <p>Ukraine</p>
-                        <p class="price">Від 125 до 300грн</p>
-                    </div>
-                </div>
-            </div>
-            <!-- PRODUCT ELEMENT -->
+        {{#if products.length}}
 
+            {{#each products}}
+            
             <div class="product-el grid-el">
                 <div class="image-wrap">
-                    <a href="#">
-                        <img src="./assets/img/jpg/product-1.jpg" alt="">
+                    <a href="{{link}}">
+                        <img src="{{image}}" alt="">
                     </a>
                 </div>
                 <div class="info-wrap padding-10">
-                    <h4>Гречка для тебе та всієї сім'ї</h4>
+                    <h6>{{name}}</h6>
                     <div class="info-main row between vertical-center">
-                        <p>Ukraine</p>
-                        <p class="price">125грн</p>
+                        <p>{{country}}</p>
+                        <p class="price">{{price}}</p>
                     </div>
                 </div>
             </div>
-            <div class="product-el grid-el">
-                <div class="image-wrap">
-                    <a href="#">
-                        <img src="./assets/img/jpg/product-3.jpg" alt="">
-                    </a>
-                </div>
-                <div class="info-wrap padding-10">
-                    <h4>Гречка для тебе та всієї сім'ї</h4>
-                    <div class="info-main row between vertical-center">
-                        <p>Ukraine</p>
-                        <p class="price">125грн</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-el grid-el">
-                <div class="image-wrap">
-                    <a href="#">
-                        <img src="./assets/img/jpg/product.jpg" alt="">
-                    </a>
-                </div>
-                <div class="info-wrap padding-10">
-                    <h4>Гречка для тебе та всієї сім'ї</h4>
-                    <div class="info-main row between vertical-center">
-                        <p>Ukraine</p>
-                        <p class="price">125грн</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-el grid-el">
-                <div class="image-wrap">
-                    <a href="#">
-                        <img src="./assets/img/jpg/product-1.jpg" alt="">
-                    </a>
-                </div>
-                <div class="info-wrap padding-10">
-                    <h4>Гречка для тебе та всієї сім'ї</h4>
-                    <div class="info-main row between vertical-center">
-                        <p>Ukraine</p>
-                        <p class="price">125грн</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-el grid-el">
-                <div class="image-wrap">
-                    <a href="#">
-                        <img src="./assets/img/jpg/product.jpg" alt="">
-                    </a>
-                </div>
-                <div class="info-wrap padding-10">
-                    <h4>Гречка для тебе та всієї сім'ї</h4>
-                    <div class="info-main row between vertical-center">
-                        <p>Ukraine</p>
-                        <p class="price">125грн</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-el grid-el">
-                <div class="image-wrap">
-                    <a href="#">
-                        <img src="./assets/img/jpg/product-1.jpg" alt="">
-                    </a>
-                </div>
-                <div class="info-wrap padding-10">
-                    <h4>Гречка для тебе та всієї сім'ї</h4>
-                    <div class="info-main row between vertical-center">
-                        <p>Ukraine</p>
-                        <p class="price">125грн</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-el grid-el">
-                <div class="image-wrap">
-                    <a href="#">
-                        <img src="./assets/img/jpg/product-3.jpg" alt="">
-                    </a>
-                </div>
-                <div class="info-wrap padding-10">
-                    <h4>Гречка для тебе та всієї сім'ї</h4>
-                    <div class="info-main row between vertical-center">
-                        <p>Ukraine</p>
-                        <p class="price">125грн</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-el grid-el">
-                <div class="image-wrap">
-                    <a href="#">
-                        <img src="./assets/img/jpg/product.jpg" alt="">
-                    </a>
-                </div>
-                <div class="info-wrap padding-10">
-                    <h4>Гречка для тебе та всієї сім'ї</h4>
-                    <div class="info-main row between vertical-center">
-                        <p>Ukraine</p>
-                        <p class="price">125грн</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-el grid-el">
-                <div class="image-wrap">
-                    <a href="#">
-                        <img src="./assets/img/jpg/product-1.jpg" alt="">
-                    </a>
-                </div>
-                <div class="info-wrap padding-10">
-                    <h4>Гречка для тебе та всієї сім'ї</h4>
-                    <div class="info-main row between vertical-center">
-                        <p>Ukraine</p>
-                        <p class="price">125грн</p>
-                    </div>
-                </div>
-            </div>
+                
+            {{/each}}
+
+        {{/if}}
+
         </div>
     </div>
     <!-- PRODUCT LIST STARTS -->

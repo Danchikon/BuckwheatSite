@@ -21,7 +21,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
-    "mongoose": "^5.11.13"
+    "mongodb": "^3.6.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
