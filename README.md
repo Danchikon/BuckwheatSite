@@ -18,11 +18,12 @@
 #### Technologies
 
 - HTML/CSS
+- JavaScript
 - SCSS
 - Node.js
 - Python
 - MongoDB
->update
+
 
 [Back To The Top](#BuckwheatPriceTracker)
 
