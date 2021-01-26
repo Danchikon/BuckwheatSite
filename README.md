@@ -1,6 +1,6 @@
 # BuckwheatPriceTracker by JWP
 
-![Project Image](project-image-url)
+![Project Image](https://github.com/Danchikon/BuckwheatSite/blob/master/r_img.jpg.jpg)
 ---
 
 ### Table of Contents
