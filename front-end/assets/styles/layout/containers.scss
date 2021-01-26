@@ -1,0 +1,42 @@
+.container-full{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    justify-content:center;
+    box-sizing:border-box;
+    background-position:center center;
+    background-size:cover;
+    padding: 0 10vw;
+}
+.container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dark-bg{
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+    @include less-opacity;
+    @include fixed-pos;
+    @include center-pos;
+    z-index: 800;
+    display: none;
+}
+.dark-bg.active{
+    display: block;
+}
+
+
+.no-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+.full-height{
+    height: 100% !important;
+}

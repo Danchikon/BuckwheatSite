@@ -1,0 +1,31 @@
+
+//FOOTER
+footer.footer{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    clear: both;
+    & *{
+        color:$white-color;
+    }
+
+    .footer-wrap{
+        width: 100%;
+        background-color: $primary-color;
+        @include radius-left;
+    }
+    .team-logo{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: $white-color;
+        text-align: center;
+        -webkit-animation: 20s linear 0s infinite rotating_cycle;
+        -moz-animation: 20s linear 0s infinite rotating_cycle;
+        -o-animation: 20s linear 0s infinite rotating_cycle;
+            animation: 20s linear 0s infinite rotating_cycle;
+        h3{
+            color:$primary-color;
+        }
+    }
+}

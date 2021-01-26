@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+
+@import '.././abstracts/colors';
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+$h1-size:3em;
+$h2-size:2.2em;
+$h3-size:1.8em;
+$h4-size:1.6em;
+$h5-size:1.4em;
+$p-size:1.2em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 120%;
+    color:$primary-color;
+    word-break: break-word;
+}
+h1 {
+    font-size: $h1-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: $h2-size;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: $h3-size;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: $h4-size;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: $h5-size;
+    font-weight: 300;
+}
+
+h6 {
+    font-size: $p-size;
+    font-weight: 300;
+}
+.big{
+    font-size: 4em;
+    font-weight: 700;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    font-size: $p-size;
+    font-weight: 400;
+    touch-action: inherit;
+    color: $white-color;
+}
+
+a,
+a:active,
+a:visited,
+a{
+    img{
+        outline: none;
+    }
+}
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+p{
+    margin: 10px 0;
+}
+p,
+select,
+option,
+label,
+table,
+span{
+    line-height: 150%;
+    font-size: $p-size;
+    font-weight: 300;
+}
+th{
+    font-size: $p-size;
+    font-weight: 400;
+}
+button {
+    font-size: $p-size;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: $p-size;
+    transition: .2s all ease-out;
+}
+
+textarea {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: $p-size;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: .2s all ease-out;
+}

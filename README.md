@@ -1,6 +1,6 @@
-# GrechkaPlanet by JWP
+# HrechkaPlanet by JWP
 
-![Project Image](https://github.com/Danchikon/BuckwheatSite/blob/master/r_img.jpg.jpg)
+![Project Image](https://github.com/Danchikon/BuckwheatSite/blob/dev/r_logo.jpg)
 ---
 
 ### Table of Contents
@@ -25,7 +25,7 @@ This project was created in order to get invited to the main stage of the INT20H
   - After page is reloaded info should automatically update 
   - It should be specifically buckwheat
   - Use some kind of cloud service.
-  > We used azure
+  > We used heroku
   
 #### Additional requirements: 
   - Display all gathered info, sorted by price
@@ -51,7 +51,7 @@ Our team included everything listed above when developing this website. So for t
 - MongoDB
 
 
-[Back To The Top](#grechkaplanet-by-jwp)
+[Back To The Top](#hrechkaplanet-by-jwp)
 
 ---
 
@@ -64,15 +64,16 @@ Step 2 | Explore and enjoy
 After the website is loaded you can start using it and start searching straight away. By default you will see buckwheat from different stores sorted by price. You can adjust filters how you wish and search other products too. Also if you press "Графік цін" button you will see buckwheat price graph.
 
 
-[Back To The Top](#grechkaplanet-by-jwp)
+[Back To The Top](#hrechkaplanet-by-jwp)
 
 
 ## Installation 
 In order to install and launch this project correctly on your localhost follow steps below.
 
-Step 1 | Clone this project to your local repository
+Step 1 | Clone this project and [parser](https://github.com/Danchikon/BuckwheatParser/) to your local repository
   ```git
-      git clone https://github.com/Danchikon/BuckwheatSite/
+      git clone https://github.com/Danchikon/BuckwheatSite.git
+      git clone https://github.com/Danchikon/BuckwheatParser.git
   ```
  Step 2 | Install all the following packages:
 
@@ -107,10 +108,10 @@ Step 1 | Clone this project to your local repository
 
   Step 4 | Open web browser and go to "localhost:3000"
   
-  Step 5 | Open cloned folder in any code editor
+  Step 5 | Open cloned folders in any code editor
 
 
-[Back To The Top](#grechkaplanet-by-jwp)
+[Back To The Top](#hrechkaplanet-by-jwp)
 
 ---
 
@@ -118,7 +119,7 @@ Step 1 | Clone this project to your local repository
 
 Project powered by JWP.
 
-[Back To The Top](#grechkaplanet-by-jwp)
+[Back To The Top](#hrechkaplanet-by-jwp)
 
 ---
 
@@ -141,5 +142,5 @@ Project powered by JWP.
 - GitHub - [Danchik](https://github.com/Danchikon)
 
 
-[Back To The Top](#grechkaplanet-by-jwp)
+[Back To The Top](#hrechkaplanet-by-jwp)
 
