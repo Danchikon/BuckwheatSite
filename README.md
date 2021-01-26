@@ -14,24 +14,24 @@
 
 This project was created in order to get invited to the main stage of the INT20H event.
 
-Tasks:
+#### Tasks:
   - Get information about buckwheat in stores. 
   - Format gathered information 
   - Display result on webpage
   
-Requirements:
+#### Requirements:
   - Gather information in 3 different stores
   - After page is reloaded info should automatically update 
   - It should be specifically buckwheat
   - Use some kind of cloud service.
   > We used azure
   
-Additional requirements: 
+#### Additional requirements: 
   - Display all gathered info, sorted by price
   - Add search filters( weight, price, etc)
   - Adapt search engine to find other products
 
-Hardcore requirement:
+#### Hardcore requirement:
   - Graph of buckwheat prices over time.
 
 
