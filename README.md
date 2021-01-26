@@ -1,4 +1,5 @@
 # HrechkaPlanet by JWP
+## [Parser](https://github.com/Danchikon/BuckwheatParser/) | Site
 [link](https://shrouded-springs-81582.herokuapp.com/)
 
 ![Project Image](https://github.com/Danchikon/BuckwheatSite/blob/dev/r_logo.jpg)
