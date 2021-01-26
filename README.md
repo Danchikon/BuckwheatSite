@@ -35,7 +35,9 @@ This project was created in order to get invited to the main stage of the INT20H
 #### Hardcore requirement:
   - Buckwheat price graph
 
-Our team included everything listed above when developing this website. So for the best experience navigate to [How to use](#how-to-use) section and test everything yourself. If you decide to check source code navigate to [Installation](#installation) section and follow the steps to install everything correctly so no bugs appear.
+Our team included everything listed above when developing this website. So for the best experience navigate to [How to use](#how-to-use) section and test everything yourself. If you decide to check source code navigate to [Installation](#installation) section and follow the steps to install everything correctly so no bugs appear. Also we thought about adaptation, so the website is adapted for smartphones, tablets, laptops and desktops.
+
+
 
 
 
