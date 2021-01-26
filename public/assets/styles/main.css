@@ -631,7 +631,8 @@ form.page-action {
         font-size: 1.4em;
         color: #ffffff;
         transition: .2s all ease-out;
-        opacity: .7; }
+        opacity: .7;
+        text-align: center; }
     form.page-action .search-container label.filter {
       width: 20%;
       cursor: pointer;
