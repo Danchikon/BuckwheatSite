@@ -70,9 +70,10 @@ After the website is loaded you can start using it and start searching straight 
 ## Installation 
 In order to install and launch this project correctly on your localhost follow steps below.
 
-Step 1 | Clone this project to your local repository
+Step 1 | Clone this project and parser to your local repository
   ```git
-      git clone https://github.com/Danchikon/BuckwheatSite/
+      git clone https://github.com/Danchikon/BuckwheatSite.git
+      git clone https://github.com/Danchikon/BuckwheatParser.git
   ```
  Step 2 | Install all the following packages:
 
@@ -107,7 +108,7 @@ Step 1 | Clone this project to your local repository
 
   Step 4 | Open web browser and go to "localhost:3000"
   
-  Step 5 | Open cloned folder in any code editor
+  Step 5 | Open cloned folders in any code editor
 
 
 [Back To The Top](#grechkaplanet-by-jwp)
