@@ -7,7 +7,7 @@ const productRouter = require("./routes/products")
 
 const PORT = process.env.PORT || 3000
 
-const uri = "mongodb+srv://User:772298NOne@hrechkacluster.m9aqq.mongodb.net/buckwheat?retryWrites=true&w=majority"
+const uri = "mongodb+srv://User:772298NOne@cluster0.m9aqq.mongodb.net/buckwheat?retryWrites=true&w=majority"
 
 let dbClient;
 
@@ -28,17 +28,23 @@ app.set('view engine', 'hbs')
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use("/products", productRouter)
 app.use('/', async (req, res) => {
-    const collection = req.app.locals.collection;
-    collection.find({}).toArray(function(err, products){
-         
-        if(err) return console.log(err);
-        res.render('index.hbs', {
-            title: "Find your hrechka",
-            isIndex: true,
-            products: products
-        })
+    const buckwheat_groats = req.app.locals.db.collection("buckwheat_groats");
+    const charts_info = req.app.locals.db.collection("charts_info");
+
+    metro = req.query.metro;
+    console.log(metro)
+
+    buckwheat_groats.find().toArray(function(err, products){
+        charts_info.find().toArray(function(err, charts){
+            if(err) return console.log(err);
+            res.render('index.hbs', {
+                title: "Find your hrechka",
+                isIndex: true,
+                products: products, 
+                charts: charts
+            })
+        });
     });
 });
 
@@ -49,7 +55,7 @@ mongoClient.connect((err, client) => {
     }
     
     dbClient = client;
-    app.locals.collection = client.db("buckwheat").collection("buckwheat_groats");
+    app.locals.db = client.db("buckwheat")
     app.listen(PORT, () => {
         console.log("server has been started")
     })
