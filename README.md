@@ -65,16 +65,13 @@ Our team included everything listed above when developing this website. So for t
 #### Installation 
 In order to install and launch this project correctly on your localhost follow steps below.
 
-Step 1
-Clone this project to your local repository
+Step 1 | Clone this project to your local repository
   ```git
       git clone https://github.com/Danchikon/BuckwheatSite/
   ```
- Step 2 
+ Step 2 | Install all the following packages:
 
----
-Install all the following packages:
-Python:
+###### [Python](https://www.python.org/downloads/):
 - BeautifulSoap
         ```python
           pip install BeautifulSoap
@@ -87,6 +84,25 @@ Python:
         ```python 
           pip install requests
         ```
+- pymongo
+        ```python
+          pip install pymongo
+        ```
+###### [Node.js](https://nodejs.org/en/download/)
+
+```node
+  npm install
+```
+
+  Step 3 | Run web application
+
+```cmd
+  npm run dev
+```
+
+  Step 4 | Open web browser and go to "localhost:3000"
+  
+  Step 5 | Open cloned folder in any code editor
 
 
 [Back To The Top](#buckwheatpricetracker-by-jwp)
