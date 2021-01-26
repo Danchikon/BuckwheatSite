@@ -6,7 +6,7 @@
 ### Table of Contents
 - [Description](#description)
 - [How To Use](#how-to-use)
-- [InstalLation](#installation)
+- [Installation](#installation)
 - [References](#references)
 - [Team Info](#team-info)
 ---
@@ -57,7 +57,7 @@ Our team included everything listed above when developing this website. So for t
 
 ## How To Use
 
->finish
+
 
 [Back To The Top](#buckwheatpricetracker-by-jwp)
 
