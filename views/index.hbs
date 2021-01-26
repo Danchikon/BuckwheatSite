@@ -19,7 +19,7 @@
     <nav class="navigation center-all">
         <div class="container-full start">
             <div class="container row start vertical-center">
-                <h3><a href="./index.html">Hrechka planet</a></h3>
+                <h3><a href="/">Hrechka planet</a></h3>
                 <a class="open-graph center-all">Графік цін</a>
             </div>
         </div>
@@ -30,7 +30,7 @@
                 <div class="header-wrap grid-el vertical-center">
                     <div class="text-inner">
                         <h1>Ми знайдемо для вас найкращу гречку</h1>
-                        <a href="#" class="center-all margin-top-30">Каталог</a>
+                        <a href="#search" class="center-all margin-top-30">Каталог</a>
                         <a href="#" class="center-all margin-top-10 open-graph">Графік цін</a>
                     </div>                    
                 </div>
@@ -64,7 +64,7 @@
     <!-- graph ends -->
 
     <!-- Search starts -->
-    <div class="container-full searchbar margin-top-50">
+    <div class="container-full searchbar margin-top-50" id="search">
         <div class="container">
             <form action="" class="page-action">
                 <!-- Search line -->
@@ -156,62 +156,67 @@
         </div> -->
         <div class="container">
             <ul class="product-list three-per-row">
-                <li class="product-el grid-el between column padding-1vw">
-                    <div>
-                        <div class="image-wrap">
-                            <img src="https://i2.rozetka.ua/goods/6151694/copy_pere_4820191590526_5b5ac78a15162_images_6151694032.jpg" alt="">
-                        </div>
-                        <div class="info-wrap">
-                            <span>Крупи гречані ArtFoods ядриця швидкорозварювана 1 кг (4820191590977)</span>
-                        </div>
-                    </div>
-                    <div class="product-action column">
-                        <div class="product-action-info vertical-bottom three-per-row-no-margin one-per-row-mobile">
-                            <p class="grid-el"><i class="fas fa-weight-hanging"></i> 100г</p>
-                            <p class="grid-el center-all"><img class="grid-el" src="./assets/img/png/rozetka.png" alt="Rozetka"></p>
-                            <p class="price grid-el row end">300грн</p>  
-                        </div>
-                        <div class="product-action-buttons two-per-row">
-                            <a class="center-all grid-el buy"><i class="fas fa-shopping-cart"></i></a>
-                            <a class="center-all grid-el open-product-popup">Деталі</a>
-                        </div>
-                    </div>
-                    <div class="product-popup">
-                        <div class="container-full full-height padding-1vw">
-                            <div class="container full-height two-per-row-no-margin one-per-row-mobile vertical-center">
-                                <div class="product-popup-image grid-el">
-                                    <img src="https://i2.rozetka.ua/goods/14397645/art_foods_4820191590977_images_14397645953.jpg" alt="">
+                 {{#if products.length}}
+                    {{#each products}}
+                        <li class="product-el grid-el between column padding-1vw">
+                            <div>
+                                <div class="image-wrap">
+                                    <img src="{{image}}" alt="{{name}}">
                                 </div>
-                                <div class="product-popup-table grid-el horizontal-center column">
-                                    <h4>Деталі</h4>
-                                    <table>
-                                        <tr>
-                                            <td>Вага</td>
-                                            <td>TEXT</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ціна</td>
-                                            <td>TEXT</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ціна за г</td>
-                                            <td>TEXT</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Магазин</td>
-                                            <td>TEXT</td>
-                                        </tr>
-                                    </table>
-                                    <a href="" class="center-all"><i class="fas fa-shopping-cart"></i></a>
+                                <div class="info-wrap">
+                                    <span>{{name}}</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="close close-product">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </li>
+                            <div class="product-action column">
+                                <div class="product-action-info vertical-bottom three-per-row-no-margin one-per-row-mobile">
+                                    <p class="grid-el"><i class="fas fa-weight-hanging"></i> {{weight}} г</p>
+                                    <p class="grid-el center-all"><img class="grid-el" src="./assets/img/png/rozetka.png" alt="Rozetka"></p>
+                                    <p class="price grid-el row end">{{price}} грн</p>  
+                                </div>
+                                <div class="product-action-buttons two-per-row">
+                                    <a href="{{link}}" class="center-all grid-el buy"><i class="fas fa-shopping-cart"></i></a>
+                                    <a class="center-all grid-el open-product-popup">Деталі</a>
+                                </div>
+                            </div>
+                            <div class="product-popup">
+                                <div class="container-full full-height padding-1vw">
+                                    <div class="container full-height two-per-row-no-margin one-per-row-mobile vertical-center">
+                                        <div class="product-popup-image grid-el">
+                                            <img src="{{image}}" alt="{{name}}">
+                                        </div>
+                                        <div class="product-popup-table grid-el horizontal-center column">
+                                            <h4>Деталі</h4>
+                                            <table>
+                                                <tr>
+                                                    <td>Вага</td>
+                                                    <td>{{weight}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ціна</td>
+                                                    <td>{{price}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ціна за г</td>
+                                                    <td>{{price_g}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Магазин</td>
+                                                    <td>{{site}}</td>
+                                                </tr>
+                                            </table>
+                                            <a href="{{link}}" class="center-all"><i class="fas fa-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="close close-product">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                    </li>
+                    {{/each}}
+                {{/if}}
+        
                 <li class="product-el grid-el column between padding-1vw">
                     <div>
                         <div class="image-wrap">
