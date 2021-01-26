@@ -88,7 +88,7 @@ Step 1 | Clone this project to your local repository
         ```python
           pip install pymongo
         ```
-###### [Node.js](https://nodejs.org/en/download/)
+###### [Node.js](https://nodejs.org/en/download/):
 
 ```node
   npm install
