@@ -1,6 +1,6 @@
 # HrechkaPlanet by JWP
 
-![Project Image](https://github.com/Danchikon/BuckwheatSite/blob/master/r_logo.jpg)
+![Project Image](https://github.com/Danchikon/BuckwheatSite/blob/dev/r_logo.jpg)
 ---
 
 ### Table of Contents
