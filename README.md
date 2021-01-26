@@ -29,7 +29,6 @@ This project was created in order to get invited to the main stage of the INT20H
   
 #### Additional requirements: 
   - Display all gathered info, sorted by price
-  - Add search filters( weight, price, etc)
   - Adapt search engine to find other products
 
 #### Hardcore requirement:
@@ -100,6 +99,7 @@ Step 1 | Clone this project and [parser](https://github.com/Danchikon/BuckwheatP
 
 ```node
   npm install
+  npm install -g nodemon
 ```
 
   Step 3 | Run web application
