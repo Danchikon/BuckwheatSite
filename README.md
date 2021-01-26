@@ -1,4 +1,4 @@
-# BuckwheatPriceTracker by JWP
+# GrechkaPlanet by JWP
 
 ![Project Image](https://github.com/Danchikon/BuckwheatSite/blob/master/r_img.jpg.jpg)
 ---
@@ -51,18 +51,23 @@ Our team included everything listed above when developing this website. So for t
 - MongoDB
 
 
-[Back To The Top](#buckwheatpricetracker-by-jwp)
+[Back To The Top](#grechkaplanet-by-jwp)
 
 ---
 
 ## How To Use
 
+Step 1 | Navigate to [webpage]()
+
+Step 2 | Explore and enjoy
+
+After the website is loaded you can start using it and start searching straight away. By default you will see buckwheat from different stores sorted by price. You can adjust filters how you wish and search other products too. Also if you press "Графік цін" button you will see buckwheat price graph.
 
 
-[Back To The Top](#buckwheatpricetracker-by-jwp)
+[Back To The Top](#grechkaplanet-by-jwp)
 
 
-#### Installation 
+## Installation 
 In order to install and launch this project correctly on your localhost follow steps below.
 
 Step 1 | Clone this project to your local repository
@@ -105,15 +110,15 @@ Step 1 | Clone this project to your local repository
   Step 5 | Open cloned folder in any code editor
 
 
-[Back To The Top](#buckwheatpricetracker-by-jwp)
+[Back To The Top](#grechkaplanet-by-jwp)
 
 ---
 
 ## References
 
-Project powed by JWP.
+Project powered by JWP.
 
-[Back To The Top](#buckwheatpricetracker-by-jwp)
+[Back To The Top](#grechkaplanet-by-jwp)
 
 ---
 
@@ -136,5 +141,5 @@ Project powed by JWP.
 - GitHub - [Danchik](https://github.com/Danchikon)
 
 
-[Back To The Top](#buckwheatpricetracker-by-jwp)
+[Back To The Top](#grechkaplanet-by-jwp)
 
