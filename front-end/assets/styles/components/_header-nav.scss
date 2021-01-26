@@ -1,0 +1,101 @@
+
+nav.navigation{
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    background: none;;
+    @include transition-default;
+    @include fixed-pos;
+    a.open-graph{
+        margin-left: 15px;
+        background-color: $primary-color;
+        text-transform: uppercase;
+        @include radius-all;
+        @include transition-default;
+        cursor: pointer;
+        display: none;
+    }
+    .open-graph:hover{
+        color:$sub-color;
+    }
+    a{
+        color:$white-color;
+    }
+    h3{
+        a{
+            font-weight: 700;
+        }
+    }
+}
+nav.navigation.scroll{
+    background-color: $white-color;
+    border-bottom: 2px solid $light-color;
+    .open-graph{
+        display: flex;
+        color:$white-color;
+    }
+    a{
+        color:$primary-color;
+    }
+}
+
+header.header{
+    width: 100%;
+    position: relative;
+    background-image: url('../img/jpg/header.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    img{
+        position: absolute;
+        left:0;
+        bottom:0;
+        right:0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .header-wrap{
+        height: 100%;
+        padding-top: 100px;
+        position: relative;
+        .text-inner{
+            *{
+                color:white;
+            }
+            a{
+                width: 200px;
+                height: 50px;
+                display: flex;
+                text-transform: uppercase;
+                background-color: $green-color;
+                @include radius-all;
+            }
+        }
+        h1{
+            color:$white-color;
+        }
+        .planet{
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            -webkit-box-shadow: 0px 0px 19px -2px rgba(255,255,255,1);
+            -moz-box-shadow: 0px 0px 19px -2px rgba(255,255,255,1);
+            box-shadow: 0px 0px 19px -2px rgba(255,255,255,1);
+
+            -webkit-animation: 20s linear 0s infinite rotating_cycle;
+            -moz-animation: 20s linear 0s infinite rotating_cycle;
+            -o-animation: 20s linear 0s infinite rotating_cycle;
+                animation: 20s linear 0s infinite rotating_cycle;
+
+            img{
+                @include absolute-pos;
+                @include image-default;
+            }
+        }
+    }
+}

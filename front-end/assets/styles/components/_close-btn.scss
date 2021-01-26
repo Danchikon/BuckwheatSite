@@ -1,0 +1,30 @@
+.close{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    @include absolute-pos-top-right;
+
+    span{
+        width: 50%;
+        height: 3px;
+        display: block;
+        background-color: $primary-color;
+        @include absolute-pos;
+        @include center-pos;
+        @include radius-all;
+        @include less-opacity;
+        @include transition-default;
+    }
+    span:nth-child(1){
+        transform: rotate(45deg)
+    }
+    span:nth-child(2){
+        transform: rotate(-45deg)
+    }
+}
+.close:hover{
+    span{
+        opacity: 1;
+        background-color: $sub-color;
+    }
+}

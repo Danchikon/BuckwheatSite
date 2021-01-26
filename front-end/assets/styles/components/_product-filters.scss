@@ -1,0 +1,87 @@
+//Prodcuct filters
+
+//SEARCH
+@mixin i-label{
+    width: 100%;
+    font-size: $h5-size;
+    color:$white-color;
+}
+@mixin variant-style {
+    margin: 10px 0;
+    width: 100%;
+    position: relative;
+}
+form.page-action{
+    width: 100%;
+    height: auto;
+    .search-container{
+        min-height: 60px;
+        box-sizing: border-box;
+        label{
+            width: 5%;
+            height: 60px;
+            background-color: $primary-color;
+            i{
+                @include i-label;
+                @include transition-default;
+                @include less-opacity;
+            }
+        }
+        label.filter{
+            cursor: pointer;
+            color:$white-color;
+            text-transform: uppercase;
+            @include transition-default;
+        }
+        label.filter:hover,
+        label.filter.active{
+            color:$sub-color;
+        }
+        label:first-child{
+            @include radius-left;
+            i{
+                opacity: 1;
+            }
+        }
+        input{
+            width: 85%;
+            height: 60px;
+            background-color: $primary-color;
+            color:$white-color;
+        }
+        button{
+            width: 5%;
+            height: 60px;
+            font-size: $h5-size;
+            position: relative;
+            background: $primary-color;
+            @include radius-right;
+
+            i{
+                @include i-label;
+                @include transition-default;
+                @include less-opacity;
+            }
+        }
+        button:hover{
+            i{
+                color:$sub-color;
+                opacity: 1;
+            }
+        }
+    }
+    .filter-container{
+        height: auto;
+        box-sizing: border-box;
+        border:2px solid $primary-color;
+        background-color: $light-color;
+        display: none;
+        @include radius-all;
+        .grid-el{
+            padding: 0 10px;
+        }
+        .variant{
+            @include variant-style;
+        }
+    }
+}

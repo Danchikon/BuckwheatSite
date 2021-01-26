@@ -1,0 +1,23 @@
+
+//MARGINS
+$i: 1;
+$j: 0;
+@while $i <= 15{
+    $j: $j + 10;
+    .margin-top-#{$j}{
+        margin-top: $j + px;
+        $i : $i + 1;
+    }
+    .margin-vertical-#{$j}{
+        margin: $j + px 0;
+    }
+}
+//PADDINGS
+@for $i from 1 through 10{
+    .padding-#{$i}vw{
+        padding: $i + vw !important;
+    }
+}
+.no-padding{
+    padding: 0 !important;
+}

@@ -1,0 +1,34 @@
+
+//Rotation
+@-webkit-keyframes rotating_cycle {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+ }
+@-moz-keyframes rotating_cycle {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+ @-o-keyframes rotating_cycle {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+ }
+@keyframes rotating_cycle { 
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }    
+}

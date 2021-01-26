@@ -1,0 +1,140 @@
+
+
+@mixin radius-top-left {
+    border-radius: 5px 0px 0px 0px !important;
+    -moz-border-radius: 5px 0px 0px 0px !important;
+    -webkit-border-radius: 5px 0px 0px 0px !important;
+}
+
+@mixin radius-top-right {
+    border-radius: 0px 5px 5px 0px !important;
+    -moz-border-radius: 0px 5px 5px 0px !important;
+    -webkit-border-radius: 0px 5px 0px 0px !important;
+}
+
+@mixin radius-bottom-left {
+    border-radius: 0px 0px 0px 5px !important;
+    -moz-border-radius: 0px 0px 0px 5px !important;
+    -webkit-border-radius: 0px 0px 0px 5px !important;
+}
+
+@mixin radius-bottom-right {
+    border-radius: 0px 0px 5px 0px !important;
+    -moz-border-radius: 0px 0px 5px 0px !important;
+    -webkit-border-radius: 0px 0px 5px 0px !important;
+}
+
+@mixin radius-left {
+    border-radius: 5px 0px 0px 5px !important;
+    -moz-border-radius: 5px 0px 0px 5px !important;
+    -webkit-border-radius: 5px 0px 0px 5px !important;
+}
+
+@mixin radius-right {
+    border-radius: 0px 5px 5px 5px !important;
+    -moz-border-radius: 0px 5px 5px 0px !important;
+    -webkit-border-radius: 0px 5px 5px 0px !important;
+}
+
+@mixin radius-top {
+    border-radius: 5px 5px 0px 0px !important;
+    -moz-border-radius: 5px 5px 0px 0px !important;
+    -webkit-border-radius: 5px 5px 0px 0px !important;
+}
+
+@mixin radius-bottom {
+    border-radius: 0px 0px 5px 5px !important;
+    -moz-border-radius: 0px 0px 5px 5px !important;
+    -webkit-border-radius: 0px 0px 5px 5px !important;
+}
+@mixin radius-all {
+    border-radius: 5px;
+}
+
+@mixin less-opacity {
+    opacity: .7;
+}
+
+
+//IMAGES
+@mixin image-default {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@mixin image-product {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;    
+}
+
+
+@mixin image-mini {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+//ANIMATION
+@mixin transition-default {
+    transition: .2s all ease-out;
+}
+
+@mixin hide-element{
+    opacity: 0;
+    visibility: hidden;
+}
+@mixin show-element{
+    opacity: 1;
+    visibility: visible;
+}
+//POSITION
+@mixin fixed-pos {
+    position: fixed;
+    top:0;
+    left:0;
+}
+@mixin absolute-pos {
+    position: absolute;
+    top:0;
+    left:0;
+}
+@mixin absolute-pos-top-right {
+    position: absolute;
+    top:0;
+    right:0;
+}
+@mixin absolute-pos-bottom {
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+@mixin center-pos {
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+//VISABILITY
+
+@mixin visability-hide{
+    visibility: hidden;
+    opacity: 0;
+}
+@mixin visability-show{
+    visibility:visible;
+    opacity: 1;
+}
+
+//Transition
+@mixin  transition-6 {
+    transition: .6s all ease-out;
+}
