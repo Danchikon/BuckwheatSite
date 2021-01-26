@@ -28,6 +28,7 @@ form.page-action{
             }
         }
         label.filter{
+            width: 20%;
             cursor: pointer;
             color:$white-color;
             text-transform: uppercase;
@@ -38,13 +39,13 @@ form.page-action{
             color:$sub-color;
         }
         label:first-child{
-            @include radius-left;
             i{
                 opacity: 1;
             }
+            @include radius-left;
         }
         input{
-            width: 85%;
+            width: 70%;
             height: 60px;
             background-color: $primary-color;
             color:$white-color;
@@ -84,4 +85,69 @@ form.page-action{
             @include variant-style;
         }
     }
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    form.page-action{
+        .search-container{
+            label{
+                width: 15%;
+                @include radius-none;
+                i{
+                    font-size: $p-size;
+                }
+            }
+            label:first-child{
+                @include radius-none; 
+                @include radius-top-left;
+            }
+            label.filter{
+                width: 80%;
+                @include radius-bottom-left;
+            }
+            input{
+                width: 85%;
+                @include radius-none;
+                @include radius-top-right;
+            }
+
+            button{
+                width: 20%;
+                @include radius-none;
+                @include radius-bottom-right;
+            }
+        }
+        .filter-container{
+            height: auto;
+            box-sizing: border-box;
+            border:2px solid $primary-color;
+            background-color: $light-color;
+            display: none;
+            @include radius-all;
+            .grid-el{
+                padding: 0 10px;
+            }
+            .variant{
+                @include variant-style;
+            }
+        }
+    }
+
+}
+@media only screen and (max-width: 768px) {
+
+}
+
+// /* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+// /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1024px){
 }

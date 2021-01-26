@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hrechka price</title>
-    <script src="./assets/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="./assets/8efd3084b1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./assets/styles/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/styles/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="./assets/styles/main.css">
-    <link rel="stylesheet" href="./assets/styles/grid.css">   
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8efd3084b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/grid.css">   
     
 
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/annotations.js"></script>
 </head>
 <body>
+    <!-- LOADER -->
+    <div class="loader hide center-all">
+        <h2>Hrechka planet</h2>
+    </div>
+    <!-- LOADER -->
     <div class="dark-bg"></div>
     <!-- Header starts -->
     <nav class="navigation center-all">
         <div class="container-full start">
             <div class="container row start vertical-center">
                 <h3><a href="./index.html">Hrechka planet</a></h3>
-                <a class="padding-1vw open-graph">Графік цін</a>
+                <a class="open-graph center-all">Графік цін</a>
             </div>
         </div>
     </nav>
@@ -32,7 +35,8 @@
                 <div class="header-wrap grid-el vertical-center">
                     <div class="text-inner">
                         <h1>Ми знайдемо для вас найкращу гречку</h1>
-                        <a href="#" class="center-all margin-top-30 open-graph">Графік цін</a>
+                        <a href="#" class="center-all margin-top-30">Каталог</a>
+                        <a href="#" class="center-all margin-top-10 open-graph">Графік цін</a>
                     </div>                    
                 </div>
                 <div class="header-wrap grid-el center-all padding-2vw">
@@ -50,9 +54,9 @@
 
     <!-- graph starts -->
     <div class="graph-popup">
-        <div class="container-full full-height no-padding">
+        <div class="container-full full-height padding-1vw">
             <div class="container full-height">
-                <div class="graph-wrapper full-height center-all padding-1vw"">
+                <div class="graph-wrapper full-height center-all">
                     <div id="container" class="full-width"></div>
                 </div>
             </div>
@@ -167,7 +171,7 @@
                         </div>
                     </div>
                     <div class="product-action column">
-                        <div class="product-action-info vertical-bottom three-per-row-no-margin">
+                        <div class="product-action-info vertical-bottom three-per-row-no-margin one-per-row-mobile">
                             <p class="grid-el"><i class="fas fa-weight-hanging"></i> 100г</p>
                             <p class="grid-el center-all"><img class="grid-el" src="./assets/img/png/rozetka.png" alt="Rozetka"></p>
                             <p class="price grid-el row end">300грн</p>  
@@ -179,7 +183,7 @@
                     </div>
                     <div class="product-popup">
                         <div class="container-full full-height padding-1vw">
-                            <div class="container full-height two-per-row-no-margin vertical-center">
+                            <div class="container full-height two-per-row-no-margin one-per-row-mobile vertical-center">
                                 <div class="product-popup-image grid-el">
                                     <img src="https://i2.rozetka.ua/goods/14397645/art_foods_4820191590977_images_14397645953.jpg" alt="">
                                 </div>
@@ -225,7 +229,7 @@
                         </div>
                     </div>
                     <div class="product-action column">
-                        <div class="product-action-info vertical-bottom three-per-row-no-margin">
+                        <div class="product-action-info vertical-bottom three-per-row-no-margin one-per-row-mobile">
                             <p class="grid-el"><i class="fas fa-weight-hanging"></i> 100г</p>
                             <p class="grid-el center-all"><img class="grid-el" src="./assets/img/png/metro.png" alt="Metro"></p>
                             <p class="price grid-el row end">300грн</p>  
@@ -279,7 +283,7 @@
                         </div>
                     </div>
                     <div class="product-action column">
-                        <div class="product-action-info vertical-bottom three-per-row-no-margin">
+                        <div class="product-action-info vertical-bottom three-per-row-no-margin one-per-row-mobile">
                             <p class="grid-el"><i class="fas fa-weight-hanging"></i> 100г</p>
                             <p class="grid-el center-all"><img class="grid-el" src="./assets/img/png/prom.png" alt="Prom"></p>
                             <p class="price grid-el row end">300грн</p>  
@@ -327,17 +331,68 @@
     <!-- PRODUCT LIST STARTS -->
 
     <!-- Footer starts -->
-    <footer class="footer margin-top-100">
-        <div class="footer-wrap full-height center-all">
-            <div class="team-logo center-all">
-                <h3>Developed by JWP</h3>
-            </div>
+    <footer class="footer margin-top-100 vertical-center">
+        <div class="logo-slider">
+            <h3>JWP</h3>
+            <h3>JWP</h3>
+            <h3>JWP</h3>
+            <h3>JWP</h3>
+            <h3>JWP</h3>
+            <h3>JWP</h3>
+            <h3>JWP</h3>
+            <h3>JWP</h3>
         </div>
     </footer>
     <!-- Footer starts -->
 
+    <!-- <script>
+        //LOADER
+
+        document.onreadystatechange = function() { 
+            if (document.readyState !== "complete") { 
+            $("body").addClass("no-scroll");
+            } else { 
+            window.setTimeout(function(){$(".loader").addClass("hide");}, 2000);
+            window.setTimeout(function(){$("body").removeClass("no-scroll");}, 2000);
+            } 
+        }; 
+    </script> -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/data.js"></script>
-    <script type="text/javascript" src="./assets/styles/slick/slick.min.js"></script>
+
+    <script>
+        $('.logo-slider').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            speed: 4000,
+            slidesToShow: 7,
+            slidesToScroll: 1,
+            arrows: false,
+            dragble: false,
+            responsive: [
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1
+                  }
+                }
+      
+              ]
+        }); 
+    </script>
 </body>
 </html>

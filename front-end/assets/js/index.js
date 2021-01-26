@@ -1,10 +1,9 @@
 
-
 //NAVIGATION ANIMATION
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 150) {
+    if (scroll >= 50) {
         $(".navigation").addClass("scroll");
     } else {
         $(".navigation").removeClass("scroll");

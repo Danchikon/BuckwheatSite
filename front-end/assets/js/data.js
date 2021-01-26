@@ -1895,7 +1895,7 @@ var elevationData = [
 
   
     title: {
-      text: 'Графік цін на гречку'
+      text: 'Ціна'
     },
     credits: {
       enabled: false

@@ -4,6 +4,7 @@
     width: 70vw;
     height: 70vh;
     z-index: 999;
+    box-sizing: border-box;
     background-color: $white-color;
     @include radius-all;    
     @include fixed-pos;
@@ -25,15 +26,12 @@
         }
 
         #container {
-            min-width: 100%;
-            max-width: 800px;
+            width: 100%;
             margin: 1em auto;
         }
         .highcharts-data-table {
             table {
-                min-width: 100%;
-                max-width: 800px;
-                margin: 1em auto;
+                width: 100%;
                 font-family: Verdana, sans-serif;
                 border-collapse: collapse;
                 border: 1px solid #EBEBEB;
