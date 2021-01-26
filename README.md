@@ -35,6 +35,10 @@ This project was created in order to get invited to the main stage of the INT20H
 #### Hardcore requirement:
   - Buckwheat price graph
 
+Our team included everything listed above when developing this website. So for the best experience navigate to [How to use](#how-to-use) section and test everything yourself. If you decide to check source code navigate to [Installation](#installation) section and follow the steps to install everything correctly so no bugs appear.
+
+
+
 
 #### Technologies
 
@@ -57,10 +61,33 @@ This project was created in order to get invited to the main stage of the INT20H
 
 [Back To The Top](#buckwheatpricetracker-by-jwp)
 
----
-## Installation 
 
->add
+#### Installation 
+In order to install and launch this project correctly on your localhost follow steps below.
+
+Step 1
+Clone this project to your local repository
+  ```git
+      git clone https://github.com/Danchikon/BuckwheatSite/
+  ```
+ Step 2 
+
+---
+Install all the following packages:
+Python:
+- BeautifulSoap
+        ```python
+          pip install BeautifulSoap
+        ```
+- colorama
+        ```python
+          pip install colorama
+        ```
+- requests
+        ```python 
+          pip install requests
+        ```
+
 
 [Back To The Top](#buckwheatpricetracker-by-jwp)
 
