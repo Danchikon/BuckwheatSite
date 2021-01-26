@@ -25,7 +25,7 @@ This project was created in order to get invited to the main stage of the INT20H
   - After page is reloaded info should automatically update 
   - It should be specifically buckwheat
   - Use some kind of cloud service.
-  > We used azure
+  > We used heroku
   
 #### Additional requirements: 
   - Display all gathered info, sorted by price
