@@ -147,6 +147,8 @@
 
     <!-- PRODUCT LIST STARTS -->
     <div class="container-full product-container margin-top-50">
+
+
         <!-- <div class="container margin-vertical-50">
             <h2>Всі товари</h2>
         </div> -->
@@ -212,6 +214,7 @@
                     </li>
                     {{/each}}
                 {{/if}}
+
             </ul>
         </div>
     </div>
@@ -251,10 +254,101 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/annotations.js"></script>
-
     <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/data.js"></script>
+    <script>
+        
+        var elevationData = [
+            [0.0, 0], 
+        ];
+        var mainDate = []
+        {{#each charts}}
+        
+        var date = {{day}}+".0"+{{month}}+"."+{{year}};
+        var sDate = ""+date;
+        var f = [date, {{avr_price}}*1000 ];
+        
+        elevationData.push(f);
+        mainDate.push(date);
+        {{/each}}
+        console.log(elevationData);
+        // Now create the chart
+        Highcharts.chart('container', {
+        
+            chart: {
+            type: 'area',
+            zoomType: 'x',
+            panning: true,
+            panKey: 'shift',
+            scrollablePlotArea: {
+                minWidth: 600
+            }
+            },
 
+        
+            title: {
+            text: 'Ціна'
+            },
+            credits: {
+            enabled: false
+            },
+        
+        
+            xAxis: {
+            labels: {
+                format: '{value}'
+            },
+            minRange: 0,
+            title: {
+                text: 'Дата'
+            },
+            categories: mainDate,
+            accessibility: {
+                rangeDescription: 'Range: від 26.01.2021 дo Сьогодні.'
+            },
+
+            },
+        
+            yAxis: {
+            startOnTick: true,
+            endOnTick: false,
+            maxPadding: 0.35,
+            title: {
+                text: null
+            },
+            labels: {
+                format: '{value} грн'
+            }
+            },
+        
+            tooltip: {
+            headerFormat: '{value} <br>',
+            pointFormat: '{point.y:.2f} грн',
+            shared: false
+            },
+        
+            legend: {
+            enabled: false
+            },
+        
+            series: [{
+            accessibility: {
+                keyboardNavigation: {
+                enabled: false
+                }
+            },
+            data: elevationData,
+            lineColor: Highcharts.getOptions().colors[1],
+            color: Highcharts.getOptions().colors[2],
+            fillOpacity: 0.5,
+            name: 'Elevation',
+            marker: {
+                enabled: false
+            },
+            threshold: null
+            }]
+        });
+    </script>
+    <script src="./assets/js/data.js"></script>
     <script>
         $('.logo-slider').slick({
             infinite: true,
