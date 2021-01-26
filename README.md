@@ -1,4 +1,5 @@
 # HrechkaPlanet by JWP
+[link]()
 
 ![Project Image](https://github.com/Danchikon/BuckwheatSite/blob/dev/r_logo.jpg)
 ---
@@ -78,23 +79,7 @@ Step 1 | Clone this project and [parser](https://github.com/Danchikon/BuckwheatP
   ```
  Step 2 | Install all the following packages:
 
-###### [Python](https://www.python.org/downloads/):
-- BeautifulSoap
-        ```python
-          pip install BeautifulSoap
-        ```
-- colorama
-        ```python
-          pip install colorama
-        ```
-- requests
-        ```python 
-          pip install requests
-        ```
-- pymongo
-        ```python
-          pip install pymongo
-        ```
+
 ###### [Node.js](https://nodejs.org/en/download/):
 
 ```node
@@ -118,6 +103,8 @@ Step 1 | Clone this project and [parser](https://github.com/Danchikon/BuckwheatP
 ---
 
 ## References
+
+[BuckwheatParser](https://github.com/Danchikon/BuckwheatParser) - important part of this project.
 
 Project powered by JWP.
 
