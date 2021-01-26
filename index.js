@@ -7,7 +7,7 @@ const productRouter = require("./routes/products")
 
 const PORT = process.env.PORT || 3000
 
-const uri = "mongodb+srv://User:772298NOne@hrechkacluster.m9aqq.mongodb.net/buckwheat?retryWrites=true&w=majority"
+const uri = "mongodb+srv://User:772298NOne@cluster0.m9aqq.mongodb.net/buckwheat?retryWrites=true&w=majority"
 
 let dbClient;
 
