@@ -1,5 +1,4 @@
-# BuckwheatPriceTracker
-## JWP
+# BuckwheatPriceTracker by JWP
 
 ![Project Image](project-image-url)
 ---
@@ -25,7 +24,7 @@
 - MongoDB
 
 
-[Back To The Top](#BuckwheatPriceTracker)
+[Back To The Top](#buckwheatpricetracker-by-jwp)
 
 ---
 
@@ -33,13 +32,17 @@
 
 >finish
 
+## Instalation 
+
+>add
+
 ---
 
 ## References
 
 Project powed by JWP.
 
-[Back To The Top](#BuckwheatPriceTracker)
+[Back To The Top](#buckwheatpricetracker-by-jwp)
 
 ---
 
@@ -62,5 +65,5 @@ Project powed by JWP.
 - GitHub - [Danchik](https://github.com/Danchikon)
 
 
-[Back To The Top](#BuckwheatPriceTracker)
+[Back To The Top](#buckwheatpricetracker-by-jwp)
 
