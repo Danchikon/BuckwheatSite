@@ -6,6 +6,7 @@
 ### Table of Contents
 - [Description](#description)
 - [How To Use](#how-to-use)
+- [InstalLation](#installation)
 - [References](#references)
 - [Team Info](#team-info)
 ---
@@ -32,7 +33,7 @@ This project was created in order to get invited to the main stage of the INT20H
   - Adapt search engine to find other products
 
 #### Hardcore requirement:
-  - Graph of buckwheat prices over time.
+  - Buckwheat price graph
 
 
 #### Technologies
@@ -54,9 +55,14 @@ This project was created in order to get invited to the main stage of the INT20H
 
 >finish
 
-## Instalation 
+[Back To The Top](#buckwheatpricetracker-by-jwp)
+
+---
+## Installation 
 
 >add
+
+[Back To The Top](#buckwheatpricetracker-by-jwp)
 
 ---
 
