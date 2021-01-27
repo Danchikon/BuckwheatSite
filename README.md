@@ -60,7 +60,7 @@ Our team included everything listed above when developing this website. So for t
 
 ## How To Use
 
-Step 1 | Navigate to [webpage]()
+Step 1 | Navigate to [webpage](https://shrouded-springs-81582.herokuapp.com/)
 
 Step 2 | Explore and enjoy
 
